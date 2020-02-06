@@ -2,8 +2,11 @@
 Extract best circle marker from video 
 
 Purpose: Find one frame of the video which shows the best circle marker.
+
 Program language: C++
+
 IDE & Compiler: Visual Studio 2015
+
 Third party library: OpenCV 3.4.0
 [Note: The program is built with debug and release configurations on x64 platform.]
 Program files:
@@ -14,12 +17,15 @@ Program files:
 - processVideo.h
 - FitContour.cpp
 - FitContour.h
-[FitCircleMarker.sln, FitCircleMarker.vcxproj, FitCircleMarker.vcxproj.filters and FitCircleMarker.vcxproj.user files are included to open the project in Visual Studio.]
+
 Input file: sample.mov
+
 Command arguments: Provide the location of the video file
 [./sample.mov --default argument]
+
 Output files: fitness_data.csv, best_frame<best_frame_index>.jpg
 [Saves the output files in the same directory of program file]
+
 Description:
 ▪ The program loads a video file from command line argument. A default argument is set assuming the video file (sample.mov) is in the same directory of program file.
 ▪ A mouse callback event is created. Click the left mouse button on video frame window to display the coordinates of the point along with the pixel intensity value. In order to analyze values, the program can be paused and resumed by pressing ‘P’ key.
